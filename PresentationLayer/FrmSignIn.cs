@@ -55,5 +55,38 @@ namespace PresentationLayer
             //this.Hide();
             
         }
+
+        private void txt_userName_Validating(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+            if (string.IsNullOrEmpty(txt_userName.Text))
+            {
+                errorProvider1.SetError(txt_userName, "Username is not left blank!");
+            }
+            else
+            {
+                errorProvider1.SetError(txt_userName, null);
+                e.Cancel = false;
+            }
+        }
+
+        private void txt_password_Validating(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+            if (string.IsNullOrEmpty(txt_password.Text))
+            {
+                errorProvider1.SetError(txt_password, "Password is not left blank!");
+            }
+            else if (txt_password.Text.Trim().Length < 6)
+            {
+                errorProvider1.SetError(txt_password, "at least 6 characters");
+
+            }
+            else
+            {
+                errorProvider1.SetError(txt_password, null);
+                e.Cancel = false;
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace DataAccessLayer_DAL
     public class Input
     {
         //properties
-        public string InputId { get; set; }
+        public int InputId { get; set; }
         public DateTime DateInput { get; set; }
         public int TotalPrice { get; set; }
         public int IdSuplier { get; set; }

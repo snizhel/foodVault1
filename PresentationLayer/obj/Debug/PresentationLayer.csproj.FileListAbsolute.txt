@@ -64,3 +64,20 @@ C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLaye
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\PresentationLayer.exe
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\PresentationLayer.pdb
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.dll
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\DataAccessLayer_DAL.dll
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.pdb
+D:\PTPMUD\foodVault\PresentationLayer\bin\Debug\DataAccessLayer_DAL.pdb
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmFoodManagement.resources
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmSignIn.resources
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\PTPMUD\foodVault\PresentationLayer\obj\Debug\PresentationLayer.pdb

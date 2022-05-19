@@ -36,32 +36,29 @@ namespace PresentationLayer
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.pic_avatar = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_idfood = new System.Windows.Forms.TextBox();
+            this.txt_namefood = new System.Windows.Forms.TextBox();
+            this.txt_quantity = new System.Windows.Forms.TextBox();
+            this.txt_idsuplier = new System.Windows.Forms.TextBox();
+            this.date_start = new System.Windows.Forms.DateTimePicker();
+            this.date_end = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btn_browse = new System.Windows.Forms.Button();
+            this.list_image = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gv_Food)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_avatar)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -69,6 +66,7 @@ namespace PresentationLayer
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // gv_Food
@@ -90,7 +88,7 @@ namespace PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 194);
+            this.label2.Location = new System.Drawing.Point(6, 216);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(18, 13);
             this.label2.TabIndex = 4;
@@ -99,7 +97,7 @@ namespace PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 220);
+            this.label3.Location = new System.Drawing.Point(6, 242);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 5;
@@ -113,15 +111,6 @@ namespace PresentationLayer
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Quantity";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 246);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Price";
             // 
             // label6
             // 
@@ -150,15 +139,6 @@ namespace PresentationLayer
             this.label8.TabIndex = 8;
             this.label8.Text = "ID Suplier";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 377);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Status";
-            // 
             // pic_avatar
             // 
             this.pic_avatar.Image = ((System.Drawing.Image)(resources.GetObject("pic_avatar.Image")));
@@ -170,116 +150,103 @@ namespace PresentationLayer
             this.pic_avatar.TabIndex = 70;
             this.pic_avatar.TabStop = false;
             // 
-            // textBox1
+            // txt_idfood
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 20);
-            this.textBox1.TabIndex = 71;
+            this.txt_idfood.Location = new System.Drawing.Point(87, 213);
+            this.txt_idfood.Name = "txt_idfood";
+            this.txt_idfood.Size = new System.Drawing.Size(318, 20);
+            this.txt_idfood.TabIndex = 71;
+            this.txt_idfood.Validating += new System.ComponentModel.CancelEventHandler(this.txt_idfood_Validating);
             // 
-            // textBox2
+            // txt_namefood
             // 
-            this.textBox2.Location = new System.Drawing.Point(87, 213);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(318, 20);
-            this.textBox2.TabIndex = 72;
+            this.txt_namefood.Location = new System.Drawing.Point(87, 239);
+            this.txt_namefood.Name = "txt_namefood";
+            this.txt_namefood.Size = new System.Drawing.Size(318, 20);
+            this.txt_namefood.TabIndex = 72;
+            this.txt_namefood.Validating += new System.ComponentModel.CancelEventHandler(this.txt_namefood_Validating);
             // 
-            // textBox3
+            // txt_quantity
             // 
-            this.textBox3.Location = new System.Drawing.Point(87, 239);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(318, 20);
-            this.textBox3.TabIndex = 73;
+            this.txt_quantity.Location = new System.Drawing.Point(87, 265);
+            this.txt_quantity.Name = "txt_quantity";
+            this.txt_quantity.Size = new System.Drawing.Size(318, 20);
+            this.txt_quantity.TabIndex = 74;
+            this.txt_quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_quantity_KeyPress);
+            this.txt_quantity.Validating += new System.ComponentModel.CancelEventHandler(this.txt_quantity_Validating);
             // 
-            // textBox4
+            // txt_idsuplier
             // 
-            this.textBox4.Location = new System.Drawing.Point(87, 265);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(318, 20);
-            this.textBox4.TabIndex = 74;
+            this.txt_idsuplier.Location = new System.Drawing.Point(87, 291);
+            this.txt_idsuplier.Name = "txt_idsuplier";
+            this.txt_idsuplier.Size = new System.Drawing.Size(318, 20);
+            this.txt_idsuplier.TabIndex = 75;
+            this.txt_idsuplier.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idsuplier_KeyPress);
+            this.txt_idsuplier.Validating += new System.ComponentModel.CancelEventHandler(this.txt_idsuplier_Validating);
             // 
-            // textBox5
+            // date_start
             // 
-            this.textBox5.Location = new System.Drawing.Point(87, 291);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(318, 20);
-            this.textBox5.TabIndex = 75;
+            this.date_start.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date_start.Location = new System.Drawing.Point(87, 318);
+            this.date_start.Name = "date_start";
+            this.date_start.Size = new System.Drawing.Size(318, 20);
+            this.date_start.TabIndex = 76;
             // 
-            // dateTimePicker1
+            // date_end
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(87, 318);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(318, 20);
-            this.dateTimePicker1.TabIndex = 76;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(87, 344);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(318, 20);
-            this.dateTimePicker2.TabIndex = 77;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(87, 370);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(318, 20);
-            this.textBox6.TabIndex = 78;
+            this.date_end.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date_end.Location = new System.Drawing.Point(87, 344);
+            this.date_end.Name = "date_end";
+            this.date_end.Size = new System.Drawing.Size(318, 20);
+            this.date_end.TabIndex = 77;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pic_avatar);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.listView1);
+            this.groupBox1.Controls.Add(this.btn_browse);
+            this.groupBox1.Controls.Add(this.list_image);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txt_idfood);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.date_end);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.date_start);
+            this.groupBox1.Controls.Add(this.txt_idsuplier);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txt_quantity);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txt_namefood);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(756, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(411, 428);
             this.groupBox1.TabIndex = 80;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button1
+            // btn_browse
             // 
-            this.button1.Location = new System.Drawing.Point(330, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 20);
-            this.button1.TabIndex = 81;
-            this.button1.Text = "Browse";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_browse.Location = new System.Drawing.Point(330, 377);
+            this.btn_browse.Name = "btn_browse";
+            this.btn_browse.Size = new System.Drawing.Size(75, 20);
+            this.btn_browse.TabIndex = 81;
+            this.btn_browse.Text = "Browse";
+            this.btn_browse.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // list_image
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(87, 396);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(237, 20);
-            this.listView1.TabIndex = 80;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.list_image.HideSelection = false;
+            this.list_image.Location = new System.Drawing.Point(87, 377);
+            this.list_image.Name = "list_image";
+            this.list_image.Size = new System.Drawing.Size(237, 20);
+            this.list_image.TabIndex = 80;
+            this.list_image.UseCompatibleStateImageBehavior = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 403);
+            this.label1.Location = new System.Drawing.Point(6, 381);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 79;
@@ -297,9 +264,9 @@ namespace PresentationLayer
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.btn_delete);
+            this.groupBox3.Controls.Add(this.btn_update);
+            this.groupBox3.Controls.Add(this.btn_add);
             this.groupBox3.Location = new System.Drawing.Point(757, 441);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(410, 78);
@@ -307,33 +274,32 @@ namespace PresentationLayer
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Function";
             // 
-            // button4
+            // btn_delete
             // 
-            this.button4.Location = new System.Drawing.Point(275, 29);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 34);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_delete.Location = new System.Drawing.Point(275, 29);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(129, 34);
+            this.btn_delete.TabIndex = 2;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_update
             // 
-            this.button3.Location = new System.Drawing.Point(141, 29);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 34);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_update.Location = new System.Drawing.Point(141, 29);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(129, 34);
+            this.btn_update.TabIndex = 1;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_add
             // 
-            this.button2.Location = new System.Drawing.Point(6, 29);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 34);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_add.Location = new System.Drawing.Point(6, 29);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(129, 34);
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -359,6 +325,10 @@ namespace PresentationLayer
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmFoodManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +350,7 @@ namespace PresentationLayer
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,31 +362,28 @@ namespace PresentationLayer
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pic_avatar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_idfood;
+        private System.Windows.Forms.TextBox txt_namefood;
+        private System.Windows.Forms.TextBox txt_quantity;
+        private System.Windows.Forms.TextBox txt_idsuplier;
+        private System.Windows.Forms.DateTimePicker date_start;
+        private System.Windows.Forms.DateTimePicker date_end;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btn_browse;
+        private System.Windows.Forms.ListView list_image;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

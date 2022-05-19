@@ -9,10 +9,10 @@ namespace DataAccessLayer_DAL
     public class OutputInfo
     {
         //properties
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string IdFood { get; set; }
-        public string IdOutput { get; set; }
-        public string IdInputInfo { get; set; }
+        public int IdOutput { get; set; }
+        public int IdInputInfo { get; set; }
         public int IdCustomer { get; set; }
         public int CountOutput { get; set; }
         public float OutputPrice { get; set; }

@@ -10,6 +10,25 @@ namespace DataAccessLayer_DAL
 {
     public class FoodDAO : GeneralDAO
     {
+        public List<Food> getAllFoods()
+        {
+            List<Food> lst = new List<Food>();
+
+            DataSet ds = getAll("Food");
+            DataTable dt = ds.Tables[0];
+            foreach (DataRow dr in dt.Rows)
+            {
+                Food acc = new Food()
+                {
+                    FoodId = dr["FoodId"].ToString(),
+                    DisplayNameFood = dr["DisplayNameFood"].ToString()
+                };
+                lst.Add(acc);
+            }
+
+            return lst;
+
+        }
         public DataSet getAllFood()
         {
             return getAll("Food");
@@ -44,11 +63,12 @@ namespace DataAccessLayer_DAL
         {
             try
             {
-                string sql = "update [Food] set DisplayNameFood = '" + food.Name + "', " +
-                                                 "Price = '" + food.Price + "', " +
-                                                 "Status = '" + food.Status + "', " +
+                string sql = "update [Food] set DisplayNameFood = '" + food.DisplayNameFood + "', " +
+                                                 "Quantity = '" + food.Quantity + "', " +
                                                  "Image = '" + food.Image + "' " +
-                                                 "where FoodId = '" + food.ID + "' ";
+                                                 "StartDate = '" + food.StartDate + "', " +
+                                                 "EndDate = '" + food.EndDate + "', " +
+                                                 "where FoodId = '" + food.FoodId + "' ";
                 return insert_update_delete(sql);// -1 if error
             }
             catch (Exception ex)

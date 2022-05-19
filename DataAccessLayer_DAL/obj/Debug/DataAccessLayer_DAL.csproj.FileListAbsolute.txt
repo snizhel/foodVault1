@@ -1,0 +1,24 @@
+D:\VisualStudio2019-BT\PTPMUD\lab03\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.dll
+D:\VisualStudio2019-BT\PTPMUD\lab03\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.pdb
+D:\VisualStudio2019-BT\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.AssemblyReference.cache
+D:\VisualStudio2019-BT\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.CoreCompileInputs.cache
+D:\VisualStudio2019-BT\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.dll
+D:\VisualStudio2019-BT\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.AssemblyReference.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.CoreCompileInputs.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.AssemblyReference.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.CoreCompileInputs.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.pdb
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.dll
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.pdb
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.AssemblyReference.cache
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.CoreCompileInputs.cache
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.dll
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.pdb

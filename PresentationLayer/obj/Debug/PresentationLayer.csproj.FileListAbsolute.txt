@@ -1,0 +1,66 @@
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\PresentationLayer.exe
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\PresentationLayer.pdb
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.dll
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\DataAccessLayer_DAL.dll
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.pdb
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\bin\Debug\DataAccessLayer_DAL.pdb
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.FrmEmployee.resources
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.pdb
+D:\VisualStudio2019-BT\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.FrmDepartment.resources
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\DataAccessLayer_DAL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\bin\Debug\DataAccessLayer_DAL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.FrmFoodManagement.resources
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\nhphongphu\Desktop\PTPMUD\lab03\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\DataAccessLayer_DAL.dll
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\bin\Debug\DataAccessLayer_DAL.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmFoodManagement.resources
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmSignIn.resources
+C:\Users\nhphongphu\Desktop\PTPMUD\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.dll
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\DataAccessLayer_DAL.dll
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\BussinessLogicLayer_BLL.pdb
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\bin\Debug\DataAccessLayer_DAL.pdb
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmFoodManagement.resources
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.FrmSignIn.resources
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb

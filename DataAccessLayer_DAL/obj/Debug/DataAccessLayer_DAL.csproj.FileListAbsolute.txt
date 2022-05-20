@@ -22,3 +22,9 @@ C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.CoreCompileInputs.cache
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.dll
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.pdb
+D:\PTPMUD\foodVault\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.dll
+D:\PTPMUD\foodVault\DataAccessLayer_DAL\bin\Debug\DataAccessLayer_DAL.pdb
+D:\PTPMUD\foodVault\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.AssemblyReference.cache
+D:\PTPMUD\foodVault\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.csproj.CoreCompileInputs.cache
+D:\PTPMUD\foodVault\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.dll
+D:\PTPMUD\foodVault\DataAccessLayer_DAL\obj\Debug\DataAccessLayer_DAL.pdb

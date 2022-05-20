@@ -9,15 +9,15 @@ namespace DataAccessLayer_DAL
     public class Food
     {
         //properties
-        public string ID { get; set; }
-        public string Name { get; set; }
-        public int Price { get; set; }
+        public string FoodId { get; set; }
+        public string DisplayNameFood { get; set; }
         public int Quantity { get; set; }
         public string Image { get; set; }
         public int IDSuplier { get; set; }
+        //DateOfManufacture
         public DateTime StartDate { get; set; }
+        //ExpirationDate
         public DateTime EndDate { get; set; }
-        public bool Status { get; set; }
 
         //constructor
         public Food() { }

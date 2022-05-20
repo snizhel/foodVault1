@@ -29,6 +29,7 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSignIn));
             this.txt_userName = new System.Windows.Forms.TextBox();
             this.btn_cancel = new System.Windows.Forms.Button();
@@ -40,20 +41,23 @@ namespace PresentationLayer
             this.label3 = new System.Windows.Forms.Label();
             this.btn_navigateRegister = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pic_avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_userName
             // 
-            this.txt_userName.Location = new System.Drawing.Point(109, 85);
+            this.txt_userName.Location = new System.Drawing.Point(108, 126);
             this.txt_userName.Multiline = true;
             this.txt_userName.Name = "txt_userName";
             this.txt_userName.Size = new System.Drawing.Size(314, 22);
             this.txt_userName.TabIndex = 0;
+            this.txt_userName.Validating += new System.ComponentModel.CancelEventHandler(this.txt_userName_Validating);
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(271, 154);
+            this.btn_cancel.Location = new System.Drawing.Point(270, 195);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(152, 25);
             this.btn_cancel.TabIndex = 2;
@@ -64,7 +68,7 @@ namespace PresentationLayer
             // btn_login
             // 
             this.btn_login.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_login.Location = new System.Drawing.Point(109, 154);
+            this.btn_login.Location = new System.Drawing.Point(108, 195);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(152, 25);
             this.btn_login.TabIndex = 3;
@@ -76,7 +80,7 @@ namespace PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 88);
+            this.label1.Location = new System.Drawing.Point(24, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 4;
@@ -86,7 +90,7 @@ namespace PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 116);
+            this.label2.Location = new System.Drawing.Point(24, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 6;
@@ -95,11 +99,12 @@ namespace PresentationLayer
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(109, 113);
+            this.txt_password.Location = new System.Drawing.Point(108, 154);
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(314, 22);
             this.txt_password.TabIndex = 5;
+            this.txt_password.Validating += new System.ComponentModel.CancelEventHandler(this.txt_password_Validating);
             // 
             // pic_avatar
             // 
@@ -107,7 +112,7 @@ namespace PresentationLayer
             this.pic_avatar.Location = new System.Drawing.Point(28, 5);
             this.pic_avatar.Margin = new System.Windows.Forms.Padding(2);
             this.pic_avatar.Name = "pic_avatar";
-            this.pic_avatar.Size = new System.Drawing.Size(273, 75);
+            this.pic_avatar.Size = new System.Drawing.Size(394, 105);
             this.pic_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_avatar.TabIndex = 71;
             this.pic_avatar.TabStop = false;
@@ -115,14 +120,14 @@ namespace PresentationLayer
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(28, 199);
+            this.label3.Location = new System.Drawing.Point(27, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(395, 2);
             this.label3.TabIndex = 72;
             // 
             // btn_navigateRegister
             // 
-            this.btn_navigateRegister.Location = new System.Drawing.Point(187, 206);
+            this.btn_navigateRegister.Location = new System.Drawing.Point(186, 247);
             this.btn_navigateRegister.Name = "btn_navigateRegister";
             this.btn_navigateRegister.Size = new System.Drawing.Size(236, 25);
             this.btn_navigateRegister.TabIndex = 74;
@@ -134,12 +139,16 @@ namespace PresentationLayer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 212);
+            this.label5.Location = new System.Drawing.Point(24, 253);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 13);
             this.label5.TabIndex = 76;
             this.label5.Text = "Dont have a user account?";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmSignIn
             // 
@@ -160,6 +169,7 @@ namespace PresentationLayer
             this.Text = "Food Warehouse Login";
             this.Load += new System.EventHandler(this.FrmSignIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +187,6 @@ namespace PresentationLayer
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_navigateRegister;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

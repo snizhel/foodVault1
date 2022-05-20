@@ -94,7 +94,27 @@ namespace DataAccessLayer_DAL
             }
         }
 
+        public List<User> getAllUsers()
+        {
+            List<User> lst = new List<User>();
 
+            DataSet ds = getAll("Users");
+            DataTable dt = ds.Tables[0];
+            foreach (DataRow dr in dt.Rows)
+            {
+                User user = new User()
+                {
+                    Id = Int32.Parse(dr["id"].ToString()),
+                    DisplayNameUser = dr["DisplayNameUser"].ToString(),
+                    UserName = dr["UserName"].ToString(),
+                    PassWord = dr["PassWord"].ToString(),
+                };
+                lst.Add(user);
+            }
+
+            return lst;
+
+        }
     }
 
 

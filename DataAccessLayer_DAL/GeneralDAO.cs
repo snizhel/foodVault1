@@ -10,8 +10,10 @@ namespace DataAccessLayer_DAL
 {
     public class GeneralDAO
     {
-        public string connectionString = "Data source=.; user id =sa; " +
-                "password=1; initial catalog =ProjectQLKTP12";
+        //public string connectionString = "Data source=.; user id =sa; " +
+        //        "password=1; initial catalog =ProjectQLKTP12";
+        public string connectionString = "Data source=DESKTOP-4EAN90E\\SQLEXPRESS; user id =sa; " +
+                "password=123456; initial catalog =ProjectQLKTP1";
         SqlConnection con = null;
 
         public DataSet getAll(string tblName)

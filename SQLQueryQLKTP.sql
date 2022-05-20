@@ -1,7 +1,7 @@
-﻿create database ProjectQLKTP1
+﻿create database ProjectQLKTPDB
 go
 
-use ProjectQLKTP1
+use ProjectQLKTPDB
 go
 
 
@@ -34,7 +34,7 @@ go
 --Đối tượng
 create table Food
 (
-	FoodId nvarchar(128) primary key,
+	FoodId int identity(1,1) primary key,
 	DisplayNameFood nvarchar(max),
 	Quantity int ,
 	Image varchar(max),
@@ -92,7 +92,7 @@ go
 create table InputInfo
 (
 	Id int identity(1,1) primary key,
-	IdFood nvarchar(128) not null,
+	IdFood int not null,
 	IdInput int not null,
 	CountInput int,
 	InputPrice float default 0,
@@ -116,7 +116,7 @@ go
 create table OutputInfo
 (
 	Id int identity(1,1) primary key,
-	IdFood nvarchar(128) not null,
+	IdFood int not null,
 	IdOutput int not null,
 	IdInputInfo int not null,
 	IdCustomer int not null,

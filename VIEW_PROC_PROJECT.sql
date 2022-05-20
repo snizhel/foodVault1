@@ -174,22 +174,21 @@ Select * from Customer
 
 
 --Đối tượng
-CREATE PROC PRC_ADD_FOOD(@FoodId nvarchar(128),
-							@DisplayNameFood nvarchar(max),
+CREATE PROC PRC_ADD_FOOD(@DisplayNameFood nvarchar(max),
 							@Quantity int,
 							@Image varchar(max),@IdSuplier int,
 							@DateOfManufacture Date,@ExpirationDate Date)
 as
 begin
-	insert Food values (@FoodId,@DisplayNameFood,@Quantity,@IdSuplier,@DateOfManufacture,@ExpirationDate)
+	insert Food values (@DisplayNameFood,@Quantity,@Image,@IdSuplier,@DateOfManufacture,@ExpirationDate)
 end
 
-exec PRC_ADD_FOOD 'S1' ,'Sua chua', '10','1.png','1' ,'2022/05/20','2023/05/20'
-exec PRC_ADD_FOOD 'S2' ,'Sua chua', '10','2.png', '1' ,'2022/05/20','2023/05/20'
+exec PRC_ADD_FOOD 'Sua chua', '10','1.png','1' ,'2022/05/20','2023/05/20'
+exec PRC_ADD_FOOD 'Sua chua', '20','2.png', '1' ,'2022/05/20','2023/05/20'
 Select * from Food
 
 --Update
-CREATE PROC PRC_UPDATE_FOOD(@FoodId nvarchar(128),
+CREATE PROC PRC_UPDATE_FOOD(@FoodId int,
 							@DisplayNameFood nvarchar(max),
 							@Quantity int,
 							@Image varchar(max),@IdSuplier int,
@@ -198,7 +197,6 @@ as
 begin
 	update Food
 	set 
-	[FoodId] = @FoodId,
 	[DisplayNameFood] = @DisplayNameFood,
 	[Quantity] = @Quantity,
 	[Image] = @Image,
@@ -208,7 +206,7 @@ begin
 	where [FoodId] = @FoodId
 end
 
-exec PRC_UPDATE_FOOD 'S2' ,'Sua Bo', '15','1.png', '2' ,'2022/05/20','2023/05/20'
+exec PRC_UPDATE_FOOD '2','Sua Bo', '15','1.png', '1' ,'2022/05/20','2023/05/20'
 Select * from Food
 
 --Delete
@@ -246,7 +244,7 @@ begin
 	where [InputId] = @InputId
 end
 
-exec PRC_UPDATE_INPUT '2','2022/05/15','30000','2'
+exec PRC_UPDATE_INPUT '2','2022/05/15','30000','1'
 Select * from Input
 
 --Delete
@@ -261,7 +259,7 @@ Select * from Input
 
 
 --Thông tin phiếu nhập
-CREATE PROC PRC_ADD_INPUTINFO(@IdFood nvarchar(128),
+CREATE PROC PRC_ADD_INPUTINFO(@IdFood int,
 							@IdInput int,@CountInput int,
 							@InputPrice float,
 							@StatusInput nvarchar(max))
@@ -270,13 +268,13 @@ begin
 	insert InputInfo values (@IdFood,@IdInput,@CountInput,@InputPrice,@StatusInput)
 end
 
-exec PRC_ADD_INPUTINFO 'S1', '01', '5' ,'1000','Green'
-exec PRC_ADD_INPUTINFO 'S2', '01', '5' ,'2000','Blue'
+exec PRC_ADD_INPUTINFO '1', '1', '5' ,'1000','Green'
+exec PRC_ADD_INPUTINFO '2', '1', '5' ,'2000','Blue'
 Select * from InputInfo
 
 --Update
 CREATE PROC PRC_UPDATE_INPUTINFO(@Id int,
-							@IdFood nvarchar(128),
+							@IdFood int,
 							@IdInput int,@CountInput int,
 							@InputPrice float,
 							@StatusInput nvarchar(max))
@@ -292,7 +290,7 @@ begin
 	where [Id] = @Id
 end
 
-exec PRC_UPDATE_INPUTINFO '2' ,'S2', '02', '2' ,'2000','Yellow'
+exec PRC_UPDATE_INPUTINFO '2' ,'2', '2', '6' ,'5000','Yellow'
 Select * from InputInfo
 
 --Delete
@@ -344,7 +342,7 @@ Select * from Output
 
 
 --Thông tin phiếu xuất
-CREATE PROC PRC_ADD_OUTPUTINFO(@IdFood nvarchar(128),
+CREATE PROC PRC_ADD_OUTPUTINFO(@IdFood int,
 							@IdOutput int,@IdInputInfo int,
 							@IdCustomer int,@CountOutput int,
 							@OutputPrice float,@StatusOutput nvarchar(max))
@@ -353,13 +351,13 @@ begin
 	insert OutputInfo values (@IdFood,@IdOutput,@IdInputInfo,@IdCustomer,@CountOutput,@OutputPrice,@StatusOutput)
 end
 
-exec PRC_ADD_OUTPUTINFO 'S1', '1', '1' ,'1' ,'5','20000','Green'
-exec PRC_ADD_OUTPUTINFO 'S2', '2', '2' ,'1' ,'5','30000','Blue'
+exec PRC_ADD_OUTPUTINFO '1', '1', '1' ,'1' ,'5','20000','Green'
+exec PRC_ADD_OUTPUTINFO '2', '2', '2' ,'1' ,'5','30000','Blue'
 Select * from OutputInfo
 
 --Update
 CREATE PROC PRC_UPDATE_OUTPUTINFO(@Id int,
-							@IdFood nvarchar(128),
+							@IdFood int,
 							@IdOutput int,@IdInputInfo int,
 							@IdCustomer int,@CountOutput int,
 							@OutputPrice float,@StatusOutput nvarchar(max))
@@ -377,7 +375,7 @@ begin
 	where [Id] = @Id
 end
 
-exec PRC_UPDATE_OUTPUTINFO '2','S2', '2', '2' ,'1' ,'1','50000','Red'
+exec PRC_UPDATE_OUTPUTINFO '2','2', '2', '2' ,'1' ,'1','50000','Red'
 Select * from OutputInfo
 
 --Delete

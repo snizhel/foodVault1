@@ -44,49 +44,36 @@ namespace DataAccessLayer_DAL
 
         public int updateCustomer(Customer customer)
         {
-            return -1;
-            //try
-            //{
-            //    //[Fname], [Minit], [Lname], [Ssn], [Bdate], [Address], [Sex], [Salary], [Super_ssn], [Dno]
-
-            //    string sql = " update Employee set Fname='" + customer.FirstName +
-            //                 "' , Address='" + customer.Address + "',Bdate='" +
-            //                 customer.Dob.ToString("yyyy/MM/dd") +
-            //                 "' where ssn='" + customer.Ssn + "' ";
-
-            //    string sql_1 = string.Format("update Employee " +
-            //                                    "set Fname='{0}',Address='{1}'," + " Bdate='{2}'" +
-            //                                     " where ssn ='{3}'  ",
-            //                                 customer.FirstName, customer.Address, customer.Dob.ToString("yyyy/MM/dd"), customer.Ssn);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
+            try
+            {
+                string sql = "update [Customer] set DisplayNameCustomer = '" + customer.DisplayNameCustomer + "', " +
+                             "Address = '" + customer.Address + "', " +
+                             "Phone = '" + customer.Phone + "', " +
+                             "Email = '" + customer.Email + "', " +
+                             "MoreInfo = '" + customer.MoreInfo + "' " +
+                             "where CustomerId = '" + customer.CustomerId + "' ";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
 
 
         public int createCustomer(Customer customer)
         {
-            return -1;
-            //try
-            //{
-            //    string sql = string.Format("insert [EMPLOYEE] " +
-            //        "                      values('{0}', 'M', 'LN', '{1}', '{2}', '{3}', 'F', 10000, '333445555', '1')",
-            //                               customer.FirstName, customer.Ssn, customer.Dob.ToString("yyyy/MM/dd"), customer.Address);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
+            try{
+                string sql = "insert into [Customer] (CustomerId, DisplayNameCustomer, Address, Phone, Email, MoreInfo) " +
+                                 "values ('" + customer.CustomerId + "', '" + customer.DisplayNameCustomer + "', '" + customer.Address + "', '" + customer.Phone + "', '" + customer.Email + "', '" + customer.MoreInfo + "')";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
     }
 }

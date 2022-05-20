@@ -62,9 +62,10 @@ namespace PresentationLayer
 
         private void txt_displayUserName_Validating(object sender, CancelEventArgs e)
         {
-            e.Cancel = true;
+            
             if (string.IsNullOrEmpty(txt_displayUserName.Text))
             {
+                e.Cancel = true;
                 errorProvider1.SetError(txt_displayUserName, "FullName is not left blank!");
             }
             else if (userManagement.isExistdisplayUserName(txt_displayUserName.Text))
@@ -80,9 +81,10 @@ namespace PresentationLayer
 
         private void txt_username_Validating(object sender, CancelEventArgs e)
         {
-            e.Cancel = true;
+            
             if (string.IsNullOrEmpty(txt_username.Text))
             {
+                e.Cancel = true;
                 errorProvider1.SetError(txt_username, "UserName is not left blank!");
             }
             else if (userManagement.isExistUserName(txt_username.Text))
@@ -98,9 +100,10 @@ namespace PresentationLayer
 
         private void txt_password_Validating(object sender, CancelEventArgs e)
         {
-            e.Cancel = true;
+            
             if (string.IsNullOrEmpty(txt_password.Text))
             {
+                e.Cancel = true;
                 errorProvider1.SetError(txt_password, "Password is not left blank!");
             }
             else if (txt_password.Text.Trim().Length < 6)
@@ -117,15 +120,16 @@ namespace PresentationLayer
 
         private void txt_confirmPasssword_Validating(object sender, CancelEventArgs e)
         {
-            e.Cancel = true;
+           
             if (string.IsNullOrEmpty(txt_confirmPasssword.Text))
             {
+                e.Cancel = true;
                 errorProvider1.SetError(txt_confirmPasssword, "Password is not left blank!");
             }
             else if (txt_confirmPasssword.Text.Trim().Length < 6)
             {
                 errorProvider1.SetError(txt_confirmPasssword, "at least 6 characters");
-
+                e.Cancel = false;
             }
             else
             {

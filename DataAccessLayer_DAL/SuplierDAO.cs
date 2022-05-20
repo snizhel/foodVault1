@@ -48,49 +48,38 @@ namespace DataAccessLayer_DAL
 
         public int updateSuplier(Suplier suplier)
         {
-            //try
-            //{
-            //    //[Fname], [Minit], [Lname], [Ssn], [Bdate], [Address], [Sex], [Salary], [Super_ssn], [Dno]
-
-            //    string sql = " update Employee set Fname='" + suplier.FirstName +
-            //                 "' , Address='" + suplier.Address + "',Bdate='" +
-            //                 suplier.Dob.ToString("yyyy/MM/dd") +
-            //                 "' where ssn='" + suplier.Ssn + "' ";
-
-            //    string sql_1 = string.Format("update Employee " +
-            //                                    "set Fname='{0}',Address='{1}'," + " Bdate='{2}'" +
-            //                                     " where ssn ='{3}'  ",
-            //                                 suplier.FirstName, suplier.Address, suplier.Dob.ToString("yyyy/MM/dd"), suplier.Ssn);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-            return -1;
+            try
+            {
+                string sql = "update [Suplier] set DisplayName = '" + suplier.DisplayName + "', " +
+                                                 "Address = '" + suplier.Address + "', " +
+                                                 "Phone = '" + suplier.Phone + "', " +
+                                                 "Email = '" + suplier.Email + "', " +
+                                                 "ContactDate = '" + suplier.ContactDate + "' " +
+                                                 "where Id = '" + suplier.Id + "' ";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
 
 
         public int createSuplier(Suplier suplier)
         {
-            //try
-            //{
-            //    string sql = string.Format("insert [EMPLOYEE] " +
-            //        "                      values('{0}', 'M', 'LN', '{1}', '{2}', '{3}', 'F', 10000, '333445555', '1')",
-            //                               suplier.FirstName, suplier.Ssn, suplier.Dob.ToString("yyyy/MM/dd"), suplier.Address);
+            try
+            {
+                string sql = "insert into [Suplier] (DisplayName, Address, Phone, Email, ContactDate) " +
+                             "values ('" + suplier.DisplayName + "', '" + suplier.Address + "', '" + suplier.Phone + "', '" + suplier.Email + "', '" + suplier.ContactDate + "')";
+                return insert_update_delete(sql);// -1 if error
 
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-            return -1;
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
     }
 

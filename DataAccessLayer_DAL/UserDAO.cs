@@ -115,6 +115,19 @@ namespace DataAccessLayer_DAL
             return lst;
 
         }
+        public bool logout()
+        {
+            try
+            {
+                string sql = "update [Users] set IsLogin = 0 ";
+                return insert_update_delete(sql) > 0;// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return false;
+            }
+        }
     }
 
 

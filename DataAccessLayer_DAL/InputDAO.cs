@@ -48,50 +48,36 @@ namespace DataAccessLayer_DAL
 
         public int updateInput(Input input)
         {
-            //try
-            //{
-            //    //[Fname], [Minit], [Lname], [Ssn], [Bdate], [Address], [Sex], [Salary], [Super_ssn], [Dno]
-
-            //    string sql = " update Employee set Fname='" + input.FirstName +
-            //                 "' , Address='" + input.Address + "',Bdate='" +
-            //                 input.Dob.ToString("yyyy/MM/dd") +
-            //                 "' where ssn='" + input.Ssn + "' ";
-
-            //    string sql_1 = string.Format("update Employee " +
-            //                                    "set Fname='{0}',Address='{1}'," + " Bdate='{2}'" +
-            //                                     " where ssn ='{3}'  ",
-            //                                 input.FirstName, input.Address, input.Dob.ToString("yyyy/MM/dd"), input.Ssn);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-            return -1;
+           try
+            {
+                string sql = "update [Input] set InputId = '" + input.InputId + "', " +
+                                                 "DateInput = '" + input.DateInput + "', " +
+                                                 "TotalPrice = '" + input.TotalPrice + "', " +
+                                                 "IdSuplier = '" + input.IdSuplier + "', " +
+                                                 "where InputId = '" + input.InputId + "' ";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
 
 
         public int createInput(Input input)
         {
-            //try
-            //{
-            //    string sql = string.Format("insert [EMPLOYEE] " +
-            //        "                      values('{0}', 'M', 'LN', '{1}', '{2}', '{3}', 'F', 10000, '333445555', '1')",
-            //                               input.FirstName, input.Ssn, input.Dob.ToString("yyyy/MM/dd"), input.Address);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-
-            return -1;
+            try
+            {
+                string sql = "insert into [Input] (InputId, DateInput, TotalPrice, IdSuplier) " +
+                                                 "values ('" + input.InputId + "', '" + input.DateInput + "', '" + input.TotalPrice + "', '" + input.IdSuplier + "')";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
     }
 }

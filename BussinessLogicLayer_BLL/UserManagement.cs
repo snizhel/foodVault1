@@ -47,5 +47,9 @@ namespace BussinessLogicLayer_BLL
             }
             return false; // tk chua ton tai
         }
+        public bool logoutUser()
+        {
+            return userDao.logout();
+        }
     }
 }

@@ -52,15 +52,16 @@ namespace PresentationLayer
         {
             FrmRegister frmRegister = new FrmRegister();
             frmRegister.Show();
-            //this.Hide();
-            
+            this.Hide();
+
         }
 
         private void txt_userName_Validating(object sender, CancelEventArgs e)
         {
-            e.Cancel = true;
+            
             if (string.IsNullOrEmpty(txt_userName.Text))
             {
+                e.Cancel = true;
                 errorProvider1.SetError(txt_userName, "Username is not left blank!");
             }
             else
@@ -72,9 +73,10 @@ namespace PresentationLayer
 
         private void txt_password_Validating(object sender, CancelEventArgs e)
         {
-            e.Cancel = true;
+           
             if (string.IsNullOrEmpty(txt_password.Text))
             {
+                e.Cancel = true;
                 errorProvider1.SetError(txt_password, "Password is not left blank!");
             }
             else if (txt_password.Text.Trim().Length < 6)

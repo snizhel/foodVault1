@@ -59,6 +59,33 @@ namespace BussinessLogicLayer_BLL
             return foodDAO.deleteFood(id);
 
         }
-        
+        public bool isExistIdFood(string idFood)
+        {
+            List<Food> lst = foodDAO.getAllFoods();
+            foreach (Food acc in lst)
+            {
+                string idFood_indb = acc.FoodId;
+                if (idFood_indb == idFood)
+                {
+                    return true; // tk da ton tai
+                }
+
+            }
+            return false; // tk chua ton tai
+        }
+        public bool isExistDisplayNameFood(string DisplayNameFood)
+        {
+            List<Food> lst = foodDAO.getAllFoods();
+            foreach (Food acc in lst)
+            {
+                string DisplayNameFood_indb = acc.DisplayNameFood;
+                if (DisplayNameFood_indb == DisplayNameFood)
+                {
+                    return true; // tk da ton tai
+                }
+
+            }
+            return false; // tk chua ton tai
+        }
     }
 }

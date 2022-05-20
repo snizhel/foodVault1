@@ -34,3 +34,12 @@ C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\BussinessLogicLa
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.csproj.CopyComplete
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.dll
 C:\Users\MXGC\Downloads\FoodManagement - FullDAO\FoodManagement\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.pdb
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\bin\Debug\BussinessLogicLayer_BLL.dll
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\bin\Debug\BussinessLogicLayer_BLL.pdb
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\bin\Debug\DataAccessLayer_DAL.dll
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\bin\Debug\DataAccessLayer_DAL.pdb
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.csproj.AssemblyReference.cache
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.csproj.CoreCompileInputs.cache
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.csproj.CopyComplete
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.dll
+D:\PTPMUD\foodVault\BussinessLogicLayer_BLL\obj\Debug\BussinessLogicLayer_BLL.pdb

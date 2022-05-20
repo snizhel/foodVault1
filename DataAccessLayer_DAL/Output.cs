@@ -9,7 +9,7 @@ namespace DataAccessLayer_DAL
     public class Output
     {
         //properties
-        public string OutputId { get; set; }
+        public int OutputId { get; set; }
         public DateTime DateOutput { get; set; }
         public int TotalPrice { get; set; }
 

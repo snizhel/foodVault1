@@ -68,10 +68,10 @@ namespace PresentationLayer
                 e.Cancel = true;
                 errorProvider1.SetError(txt_displayUserName, "FullName is not left blank!");
             }
-            else if (userManagement.isExistdisplayUserName(txt_displayUserName.Text))
-            {
-                errorProvider1.SetError(txt_displayUserName, "FullName existed!!!");
-            }
+            //else if (userManagement.isExistdisplayUserName(txt_displayUserName.Text))
+            //{
+            //    errorProvider1.SetError(txt_displayUserName, "FullName existed!!!");
+            //}
             else
             {
                 errorProvider1.SetError(txt_displayUserName, null);

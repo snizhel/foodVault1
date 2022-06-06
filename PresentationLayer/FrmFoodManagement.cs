@@ -122,5 +122,12 @@ namespace PresentationLayer
             }
         }
 
+
+        //Tabs Suplier
+        private void btn_AddSuplier_Click(object sender, EventArgs e)
+        {
+            FrmAddSuplier frmAddSuplier = new FrmAddSuplier();
+            frmAddSuplier.Show();
+        }
     }
 }

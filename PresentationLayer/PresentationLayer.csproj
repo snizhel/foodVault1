@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddSuplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddSuplier.Designer.cs">
+      <DependentUpon>FrmAddSuplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFoodManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddSuplier.resx">
+      <DependentUpon>FrmAddSuplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFoodManagement.resx">
       <DependentUpon>FrmFoodManagement.cs</DependentUpon>
     </EmbeddedResource>

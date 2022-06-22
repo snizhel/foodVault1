@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLayer_DAL
 {
@@ -16,11 +12,11 @@ namespace DataAccessLayer_DAL
         }
 
 
-        //public DataSet searchByName(string name)
-        //{
-        //    return search("Input", "DisplayNameCustomer like '%" + name + "%' or " +
-        //                              "DisplayNameCustomer like '%" + name + "%' ");
-        //}
+        public DataSet searchByName(string name)
+        {
+            return search("Output", "TotalPrice like '%" + name + "%' or " +
+                                      "TotalPrice like '%" + name + "%' ");
+        }
 
 
         public SqlDataReader findById(string id)
@@ -31,7 +27,7 @@ namespace DataAccessLayer_DAL
             return dr;
         }
 
-        public int deleteOutput(string id)
+        public int deleteOutput(int id)
         {
             try
             {
@@ -48,50 +44,34 @@ namespace DataAccessLayer_DAL
 
         public int updateOutput(Output output)
         {
-            //try
-            //{
-            //    //[Fname], [Minit], [Lname], [Ssn], [Bdate], [Address], [Sex], [Salary], [Super_ssn], [Dno]
-
-            //    string sql = " update Employee set Fname='" + output.FirstName +
-            //                 "' , Address='" + output.Address + "',Bdate='" +
-            //                 output.Dob.ToString("yyyy/MM/dd") +
-            //                 "' where ssn='" + output.Ssn + "' ";
-
-            //    string sql_1 = string.Format("update Employee " +
-            //                                    "set Fname='{0}',Address='{1}'," + " Bdate='{2}'" +
-            //                                     " where ssn ='{3}'  ",
-            //                                 output.FirstName, output.Address, output.Dob.ToString("yyyy/MM/dd"), output.Ssn);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-
-            return -1;
+            try
+            {
+                string sql = "update [Output] set DateOutput = '" + output.DateOutput.ToString("MM/dd/yyyy") + "', " +
+                                                 "TotalPrice = '" + output.TotalPrice + "', " +
+                                                 "where OutputId = '" + output.OutputId + "' ";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
 
 
         public int createOutput(Output output)
         {
-            //try
-            //{
-            //    string sql = string.Format("insert [EMPLOYEE] " +
-            //        "                      values('{0}', 'M', 'LN', '{1}', '{2}', '{3}', 'F', 10000, '333445555', '1')",
-            //                               output.FirstName, output.Ssn, output.Dob.ToString("yyyy/MM/dd"), output.Address);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-            return -1;
+            try
+            {
+                string sql = "insert into [Output] (DateOutput, TotalPrice) " +
+                             "values ('" + output.DateOutput.ToString("MM/dd/yyyy") + "', '" + output.TotalPrice + "')";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
     }
 }

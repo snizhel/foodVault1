@@ -22,6 +22,12 @@ namespace DataAccessLayer_DAL
         //                              "DisplayNameCustomer like '%" + name + "%' ");
         //}
 
+        public DataSet searchByInputId(int id)
+        {
+            return search("InputInfo", "IdInput like '%" + id + "%' or " +
+                                      "IdInput like '%" + id + "%' ");
+        }
+
 
         public SqlDataReader findById(string id)
         {
@@ -48,49 +54,33 @@ namespace DataAccessLayer_DAL
 
         public int updateInputInfo(InputInfo inputInfo)
         {
-            //try
-            //{
-            //    //[Fname], [Minit], [Lname], [Ssn], [Bdate], [Address], [Sex], [Salary], [Super_ssn], [Dno]
-
-            //    string sql = " update Employee set Fname='" + inputInfo.FirstName +
-            //                 "' , Address='" + inputInfo.Address + "',Bdate='" +
-            //                 inputInfo.Dob.ToString("yyyy/MM/dd") +
-            //                 "' where ssn='" + inputInfo.Ssn + "' ";
-
-            //    string sql_1 = string.Format("update Employee " +
-            //                                    "set Fname='{0}',Address='{1}'," + " Bdate='{2}'" +
-            //                                     " where ssn ='{3}'  ",
-            //                                 inputInfo.FirstName, inputInfo.Address, inputInfo.Dob.ToString("yyyy/MM/dd"), inputInfo.Ssn);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
-
-            return -1;
+            try
+            {
+                string sql = "update [InputInfo] set StatusInput = '" + inputInfo.StatusInput + "' " +
+                                                 "where Id = '" + inputInfo.Id + "' ";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
         }
 
 
         public int createInputInfo(InputInfo inputInfo)
         {
-            //try
-            //{
-            //    string sql = string.Format("insert [EMPLOYEE] " +
-            //        "                      values('{0}', 'M', 'LN', '{1}', '{2}', '{3}', 'F', 10000, '333445555', '1')",
-            //                               inputInfo.FirstName, inputInfo.Ssn, inputInfo.Dob.ToString("yyyy/MM/dd"), inputInfo.Address);
-
-            //    return insert_update_delete(sql); // -1 if error
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // log
-            //    return -1;
-            //}
+            try
+            {
+                string sql = "insert into [InputInfo] (IdFood, IdInput, CountInput, InputPrice, StatusInput) " +
+                                                 "values ('" + inputInfo.IdFood + "', '" + inputInfo.IdInput + "', '" + inputInfo.CountInput + "', '" + inputInfo.InputPrice + "', '" + inputInfo.StatusInput + "')";
+                return insert_update_delete(sql);// -1 if error
+            }
+            catch (Exception ex)
+            {
+                //log
+                return -1;
+            }
 
             return -1;
         }

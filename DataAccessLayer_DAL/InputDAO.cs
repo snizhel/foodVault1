@@ -69,8 +69,8 @@ namespace DataAccessLayer_DAL
         {
             try
             {
-                string sql = "insert into [Input] (InputId, DateInput, TotalPrice, IdSuplier) " +
-                                                 "values ('" + input.InputId + "', '" + input.DateInput + "', '" + input.TotalPrice + "', '" + input.IdSuplier + "')";
+                string sql = "insert into [Input] (DateInput, TotalPrice, IdSuplier) " +
+                                                 "values ('" + input.DateInput.ToString("MM/dd/yyyy") + "', '" + input.TotalPrice + "', '" + input.IdSuplier + "')";
                 return insert_update_delete(sql);// -1 if error
             }
             catch (Exception ex)

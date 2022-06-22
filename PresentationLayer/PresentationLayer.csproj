@@ -52,6 +52,36 @@
     <Compile Include="FrmAddCustomer.Designer.cs">
       <DependentUpon>FrmAddCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddFood.Designer.cs">
+      <DependentUpon>FrmAddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddOutput.Designer.cs">
+      <DependentUpon>FrmAddOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddOutputInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddOutputInfo.Designer.cs">
+      <DependentUpon>FrmAddOutputInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddSuplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddSuplier.designer.cs">
+      <DependentUpon>FrmAddSuplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInputInfoDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputInfoDetails.Designer.cs">
+      <DependentUpon>FrmInputInfoDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSuplierDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,10 +112,49 @@
     <Compile Include="FrmUpdateCustomer.Designer.cs">
       <DependentUpon>FrmUpdateCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateFood.Designer.cs">
+      <DependentUpon>FrmUpdateFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateOutput.Designer.cs">
+      <DependentUpon>FrmUpdateOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateOutputInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateOutputInfo.Designer.cs">
+      <DependentUpon>FrmUpdateOutputInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateSuplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateSuplier.designer.cs">
+      <DependentUpon>FrmUpdateSuplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAddCustomer.resx">
       <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddFood.resx">
+      <DependentUpon>FrmAddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddOutput.resx">
+      <DependentUpon>FrmAddOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddOutputInfo.resx">
+      <DependentUpon>FrmAddOutputInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddSuplier.resx">
+      <DependentUpon>FrmAddSuplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputInfoDetails.resx">
+      <DependentUpon>FrmInputInfoDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSuplierDetail.resx">
       <DependentUpon>FrmSuplierDetail.cs</DependentUpon>
@@ -101,6 +170,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateCustomer.resx">
       <DependentUpon>FrmUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateFood.resx">
+      <DependentUpon>FrmUpdateFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateOutput.resx">
+      <DependentUpon>FrmUpdateOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateOutputInfo.resx">
+      <DependentUpon>FrmUpdateOutputInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateSuplier.resx">
+      <DependentUpon>FrmUpdateSuplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +230,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="upload\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

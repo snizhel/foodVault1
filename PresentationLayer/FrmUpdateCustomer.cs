@@ -55,7 +55,7 @@ namespace PresentationLayer
             }
             else
             {
-                Status.Text = "Create successfully !!!";
+                Status.Text = "Update successfully !!!";
             }
             frmFoodManagement1.loadCustomerData();
         }

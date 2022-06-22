@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -7,25 +6,6 @@ namespace DataAccessLayer_DAL
 {
     public class CustomerDAO : GeneralDAO
     {
-        public List<Customer> getAllCustomers()
-        {
-            List<Customer> lst = new List<Customer>();
-
-            DataSet ds = getAll("Customer");
-            DataTable dt = ds.Tables[0];
-            foreach (DataRow dr in dt.Rows)
-            {
-                Customer customer = new Customer()
-                {
-                    CustomerId = int.Parse(dr["CustomerId"].ToString()),
-                    DisplayNameCustomer = dr["DisplayNameFood"].ToString()
-                };
-                lst.Add(customer);
-            }
-
-            return lst;
-
-        }
         public DataSet getAllCustomer()
         {
             return getAll("Customer");

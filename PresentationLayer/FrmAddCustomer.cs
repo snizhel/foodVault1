@@ -9,6 +9,7 @@ namespace PresentationLayer
     public partial class FrmAddCustomer : Form
     {
         CustomerManagement customerManagement = new CustomerManagement();
+
         private readonly FrmFoodManagement frmFoodManagement1;
 
         public FrmAddCustomer(FrmFoodManagement frmFoodManagement)
@@ -20,7 +21,6 @@ namespace PresentationLayer
         private void FrmAddCustomer_Load(object sender, EventArgs e)
         {
             loadCustomerDetail();
-
         }
 
         private void loadCustomerDetail()
@@ -54,7 +54,6 @@ namespace PresentationLayer
                 MoreInfo = txt_CustomerMoreInfo.Text,
                 ContractDate = dt_CustomerContactDate.Value
             };
-            // 
             int result = customerManagement.AddCustomer(customer);
             if (result < 0)
             {
@@ -62,10 +61,8 @@ namespace PresentationLayer
             }
             else
             {
-
-                Status.Text = "Create employee successfully !!!";
+                Status.Text = "Create successfully !!!";
             }
-
             frmFoodManagement1.loadCustomerData();
         }
 

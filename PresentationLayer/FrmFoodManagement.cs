@@ -17,7 +17,7 @@ namespace PresentationLayer
         SupilerManagement supilerManagement = new SupilerManagement();
         InputManagement inputManagement = new InputManagement();
         InputInfoManagement inputInfoManagement = new InputInfoManagement();
-
+        UserManagement userManagement = new UserManagement();
 
 
         BindingSource bindingFoodData = new BindingSource();
@@ -400,6 +400,7 @@ namespace PresentationLayer
             if (gv_Output.SelectedRows.Count > 0)
             {
                 outputId = int.Parse(gv_Output.SelectedRows[0].Cells["OutputId"].Value.ToString());
+
             }
         }
         private void btn_addOutput_Click(object sender, EventArgs e)
@@ -453,6 +454,11 @@ namespace PresentationLayer
             if (gv_OutputInfo.SelectedRows.Count > 0)
             {
                 outputInfoId = int.Parse(gv_OutputInfo.SelectedRows[0].Cells["Id"].Value.ToString());
+
+
+
+
+
             }
         }
         private void btn_addOutputInfo_Click(object sender, EventArgs e)
@@ -566,6 +572,32 @@ namespace PresentationLayer
             {
                 e.Handled = true;
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            userManagement.logoutUser();
+            FrmSignIn frmSignIn = new FrmSignIn();
+            frmSignIn.Show();
+            this.Hide();
+
+        }
+
+        private void gv_OutputInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gv_SuplierTabsFoodData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmOutputInfoDetail frmOutputInfoDetail = new FrmOutputInfoDetail(this);
+            frmOutputInfoDetail.Show();
+
         }
 
 

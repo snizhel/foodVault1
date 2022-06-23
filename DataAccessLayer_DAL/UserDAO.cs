@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLayer_DAL
 {
@@ -68,7 +65,7 @@ namespace DataAccessLayer_DAL
             try
             {
                 string sql = "insert into [Users] (DisplayNameUser,UserName, PassWord, IdRole) " +
-                             "values ('" + user.DisplayNameUser + "','"+user.UserName+"' ,'" + user.PassWord + "', '" + 2 + "') ";
+                             "values ('" + user.DisplayNameUser + "','" + user.UserName + "' ,'" + user.PassWord + "', '" + 2 + "') ";
                 return insert_update_delete(sql) > 0;// -1 if error
             }
             catch (Exception ex)

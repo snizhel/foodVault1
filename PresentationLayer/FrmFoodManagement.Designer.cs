@@ -118,9 +118,6 @@ namespace PresentationLayer
             this.gv_InputDataSource = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.btn_deleteOutputInfo = new System.Windows.Forms.Button();
-            this.btn_updateOutputInfo = new System.Windows.Forms.Button();
-            this.btn_addOutputInfo = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.btn_deleteOutput = new System.Windows.Forms.Button();
             this.btn_updateOutput = new System.Windows.Forms.Button();
@@ -138,6 +135,7 @@ namespace PresentationLayer
             this.lbl_searchOutput = new System.Windows.Forms.ToolStripButton();
             this.gv_Output = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Food)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -197,9 +195,9 @@ namespace PresentationLayer
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 509);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 507);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1023, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1019, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -471,7 +469,7 @@ namespace PresentationLayer
             this.tabControl1.Location = new System.Drawing.Point(12, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(999, 480);
+            this.tabControl1.Size = new System.Drawing.Size(999, 481);
             this.tabControl1.TabIndex = 83;
             // 
             // tabPage1
@@ -482,7 +480,7 @@ namespace PresentationLayer
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(997, 458);
+            this.tabPage1.Size = new System.Drawing.Size(991, 455);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Food Management";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -495,7 +493,7 @@ namespace PresentationLayer
             this.tabPage4.Controls.Add(this.groupBox12);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(997, 458);
+            this.tabPage4.Size = new System.Drawing.Size(991, 455);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Suplier Food";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -631,6 +629,7 @@ namespace PresentationLayer
             this.gv_SuplierTabsFoodData.Name = "gv_SuplierTabsFoodData";
             this.gv_SuplierTabsFoodData.Size = new System.Drawing.Size(533, 312);
             this.gv_SuplierTabsFoodData.TabIndex = 0;
+            this.gv_SuplierTabsFoodData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_SuplierTabsFoodData_CellContentClick);
             // 
             // groupBox12
             // 
@@ -692,7 +691,7 @@ namespace PresentationLayer
             this.tabPage5.Controls.Add(this.groupBox16);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(997, 458);
+            this.tabPage5.Size = new System.Drawing.Size(991, 455);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Customer Buy Food";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -851,7 +850,7 @@ namespace PresentationLayer
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(997, 458);
+            this.tabPage2.Size = new System.Drawing.Size(991, 455);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Input Management";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -988,59 +987,27 @@ namespace PresentationLayer
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(991, 454);
+            this.tabPage3.Size = new System.Drawing.Size(991, 455);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Output Management";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.btn_deleteOutputInfo);
-            this.groupBox11.Controls.Add(this.btn_updateOutputInfo);
-            this.groupBox11.Controls.Add(this.btn_addOutputInfo);
-            this.groupBox11.Location = new System.Drawing.Point(3, 371);
+            this.groupBox11.Controls.Add(this.button1);
+            this.groupBox11.Location = new System.Drawing.Point(363, 371);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(625, 78);
             this.groupBox11.TabIndex = 85;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Function";
             // 
-            // btn_deleteOutputInfo
-            // 
-            this.btn_deleteOutputInfo.Location = new System.Drawing.Point(493, 29);
-            this.btn_deleteOutputInfo.Name = "btn_deleteOutputInfo";
-            this.btn_deleteOutputInfo.Size = new System.Drawing.Size(129, 34);
-            this.btn_deleteOutputInfo.TabIndex = 2;
-            this.btn_deleteOutputInfo.Text = "Delete";
-            this.btn_deleteOutputInfo.UseVisualStyleBackColor = true;
-            this.btn_deleteOutputInfo.Click += new System.EventHandler(this.btn_deleteOutputInfo_Click);
-            // 
-            // btn_updateOutputInfo
-            // 
-            this.btn_updateOutputInfo.Location = new System.Drawing.Point(251, 29);
-            this.btn_updateOutputInfo.Name = "btn_updateOutputInfo";
-            this.btn_updateOutputInfo.Size = new System.Drawing.Size(129, 34);
-            this.btn_updateOutputInfo.TabIndex = 1;
-            this.btn_updateOutputInfo.Text = "Update";
-            this.btn_updateOutputInfo.UseVisualStyleBackColor = true;
-            this.btn_updateOutputInfo.Click += new System.EventHandler(this.btn_updateOutputInfo_Click);
-            // 
-            // btn_addOutputInfo
-            // 
-            this.btn_addOutputInfo.Location = new System.Drawing.Point(3, 29);
-            this.btn_addOutputInfo.Name = "btn_addOutputInfo";
-            this.btn_addOutputInfo.Size = new System.Drawing.Size(129, 34);
-            this.btn_addOutputInfo.TabIndex = 0;
-            this.btn_addOutputInfo.Text = "Add";
-            this.btn_addOutputInfo.UseVisualStyleBackColor = true;
-            this.btn_addOutputInfo.Click += new System.EventHandler(this.btn_addOutputInfo_Click);
-            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.btn_deleteOutput);
             this.groupBox10.Controls.Add(this.btn_updateOutput);
             this.groupBox10.Controls.Add(this.btn_addOutput);
-            this.groupBox10.Location = new System.Drawing.Point(631, 371);
+            this.groupBox10.Location = new System.Drawing.Point(3, 371);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(354, 78);
             this.groupBox10.TabIndex = 84;
@@ -1081,7 +1048,7 @@ namespace PresentationLayer
             // 
             this.groupBox9.Controls.Add(this.toolStrip5);
             this.groupBox9.Controls.Add(this.gv_OutputInfo);
-            this.groupBox9.Location = new System.Drawing.Point(3, 3);
+            this.groupBox9.Location = new System.Drawing.Point(363, 3);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(625, 362);
             this.groupBox9.TabIndex = 2;
@@ -1128,13 +1095,14 @@ namespace PresentationLayer
             this.gv_OutputInfo.Name = "gv_OutputInfo";
             this.gv_OutputInfo.Size = new System.Drawing.Size(619, 312);
             this.gv_OutputInfo.TabIndex = 0;
+            this.gv_OutputInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_OutputInfo_CellContentClick);
             this.gv_OutputInfo.SelectionChanged += new System.EventHandler(this.gv_OutputInfo_SelectionChanged);
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.aw);
             this.groupBox8.Controls.Add(this.gv_Output);
-            this.groupBox8.Location = new System.Drawing.Point(631, 3);
+            this.groupBox8.Location = new System.Drawing.Point(3, 3);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(354, 362);
             this.groupBox8.TabIndex = 1;
@@ -1193,12 +1161,23 @@ namespace PresentationLayer
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 85;
             this.label5.Text = "Logout";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(545, 53);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "View Detail";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmFoodManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 531);
+            this.ClientSize = new System.Drawing.Size(1019, 529);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
@@ -1361,9 +1340,6 @@ namespace PresentationLayer
         private System.Windows.Forms.DataGridView gv_InputDataSource;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button btn_deleteOutputInfo;
-        private System.Windows.Forms.Button btn_updateOutputInfo;
-        private System.Windows.Forms.Button btn_addOutputInfo;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button btn_deleteOutput;
         private System.Windows.Forms.Button btn_updateOutput;
@@ -1382,5 +1358,6 @@ namespace PresentationLayer
         private System.Windows.Forms.DataGridView gv_Output;
         private System.Windows.Forms.ToolStripStatusLabel Status;
         private System.Windows.Forms.TextBox txt_FilePath;
+        private System.Windows.Forms.Button button1;
     }
 }

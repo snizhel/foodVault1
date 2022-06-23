@@ -82,6 +82,12 @@
     <Compile Include="FrmInputInfoDetails.Designer.cs">
       <DependentUpon>FrmInputInfoDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOutputInfoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutputInfoDetail.Designer.cs">
+      <DependentUpon>FrmOutputInfoDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSuplierDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInputInfoDetails.resx">
       <DependentUpon>FrmInputInfoDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOutputInfoDetail.resx">
+      <DependentUpon>FrmOutputInfoDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSuplierDetail.resx">
       <DependentUpon>FrmSuplierDetail.cs</DependentUpon>

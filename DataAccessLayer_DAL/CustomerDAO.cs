@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -22,6 +23,7 @@ namespace DataAccessLayer_DAL
             //closeConnection();
             return dr;
         }
+
 
         public int deleteCustomer(int id)
         {
@@ -73,6 +75,26 @@ namespace DataAccessLayer_DAL
                 //log
                 return -1;
             }
+        }
+        public List<Customer> getAll()
+        {
+            List<Customer> list = new List<Customer>();
+            DataSet ds = getAll("Customer");
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                Customer customer = new Customer();
+                customer.CustomerId = Convert.ToInt32(dr["CustomerId"]);
+                customer.DisplayNameCustomer = dr["DisplayNameCustomer"].ToString();
+                customer.Address = dr["Address"].ToString();
+                customer.Phone = dr["Phone"].ToString();
+                customer.Email = dr["Email"].ToString();
+                customer.MoreInfo = dr["MoreInfo"].ToString();
+                customer.ContractDate = Convert.ToDateTime(dr["ContractDate"]);
+                list.Add(customer);
+            }
+            return list;
+
+
         }
     }
 }

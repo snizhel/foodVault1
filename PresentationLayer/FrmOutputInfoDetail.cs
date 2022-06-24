@@ -13,6 +13,8 @@ namespace PresentationLayer
         FoodManagement foodManagement = new FoodManagement();
         InputInfoManagement infoManagement = new InputInfoManagement();
         OutputInfoManagement outputInfo = new OutputInfoManagement();
+        public string food;
+        public string customer;
 
         public FrmOutputInfoDetail(FrmFoodManagement frmFoodManagement)
         {
@@ -32,13 +34,28 @@ namespace PresentationLayer
             if (sqlDataReader.Read())
             {
                 txt_Id.Text = sqlDataReader.GetInt32(0).ToString();
-                string food = sqlDataReader.GetInt32(1).ToString();
-                txt_food.Text = foodManagement.getDatails(food).ToString();
-                txt_IdInputInfo.Text = sqlDataReader.GetInt32(2).ToString();
-                txt_OutputPrice.Text = sqlDataReader.GetInt32(3).ToString();
+                this.food = sqlDataReader.GetInt32(1).ToString();
+                txt_food.Text = foodManagement.getFoodById(this.food);
+                this.customer = sqlDataReader.GetInt32(4).ToString();
+                txt_customer.Text = customerManagement.getCustomerById(this.customer);
+                txt_IdInputInfo.Text = sqlDataReader.GetInt32(3).ToString();
+                txt_OutputPrice.Text = sqlDataReader.GetDouble(6).ToString();
+                txt_CountOutput.Text = sqlDataReader.GetInt32(5).ToString();
+                status_OutputInfo.Text = sqlDataReader.GetString(7);
 
 
             }
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void txt_customer_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

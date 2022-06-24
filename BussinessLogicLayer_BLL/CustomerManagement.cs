@@ -1,7 +1,7 @@
 ﻿using DataAccessLayer_DAL;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-
 namespace BussinessLogicLayer_BLL
 {
     public class CustomerManagement
@@ -54,6 +54,24 @@ namespace BussinessLogicLayer_BLL
             return customerDAO.deleteCustomer(id);
 
         }
+
+        public string getCustomerById(string customer)
+        {
+            List<Customer> lst = customerDAO.getAll();
+            foreach (Customer acc in lst)
+            {
+                string idCus_indb = acc.CustomerId.ToString();
+                if (idCus_indb == customer)
+                {
+                    return acc.DisplayNameCustomer;
+                }
+
+            }
+            return "";
+
+        }
+
+
         //public bool isExistIdCustomer(int idCustomer)
         //{
         //    List<Customer> lst = customerDAO.getAllCustomers();

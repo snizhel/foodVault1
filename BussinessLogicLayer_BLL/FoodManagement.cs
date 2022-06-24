@@ -74,6 +74,23 @@ namespace BussinessLogicLayer_BLL
             }
             return false; // tk chua ton tai
         }
+
+        public string getFoodById(string food)
+        {
+            List<Food> lst = foodDAO.getAllFoods();
+            foreach (Food acc in lst)
+            {
+                string idFood_indb = acc.FoodId.ToString();
+                if (idFood_indb == food)
+                {
+                    return acc.DisplayNameFood;
+                }
+
+            }
+            return "";
+
+        }
+
         public bool isExistDisplayNameFood(string DisplayNameFood)
         {
             List<Food> lst = foodDAO.getAllFoods();

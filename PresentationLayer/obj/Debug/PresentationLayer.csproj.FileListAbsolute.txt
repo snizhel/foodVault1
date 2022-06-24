@@ -13,6 +13,7 @@ C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\P
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmAddOutputInfo.resources
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmAddSuplier.resources
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmInputInfoDetails.resources
+C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmOutputInfoDetail.resources
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmSuplierDetail.resources
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmFoodManagement.resources
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmRegister.resources
@@ -28,4 +29,3 @@ C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\P
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.pdb
-C:\Users\fangi\Downloads\Lab08\foodVault\foodVault\PresentationLayer\obj\Debug\PresentationLayer.FrmOutputInfoDetail.resources
